@@ -29,7 +29,6 @@ namespace MovieLibrary
             services.AddTransient<IOutputService, ConsoleOutputService>();
             services.AddTransient<IInputService, ConsoleInputService>();
 
-            services.AddDbContext<MovieContext>();
             services.AddDbContextFactory<MovieContext>();
 
             return services.BuildServiceProvider();
